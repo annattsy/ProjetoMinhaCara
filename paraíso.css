@@ -1,0 +1,207 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFF9E8; /* Amarelo claro */ 
+    color: #2D7F36; /* Verde escuro */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+P {
+    margin-top: 0.3rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Cabeçalho com degradê de cores verde, amarelo e azul */
+.header-bar {
+    background: linear-gradient(to right, #113f75, #009639, #FDD835);
+    padding: 20px 0;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #fcd116; /* Amarelo */
+}
+
+/* Estilo para a navegação */
+.navbar nav ul li a {
+    color: #fff;
+    }
+    
+.navbar nav ul li a:hover {
+    color:#06284e;
+    }
+
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.gallery-item {
+    background-color: #FFF9E8;
+    border: 1px solid #2d7f3727;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.gallery-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6A9C5B;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.earth-link {
+    display: inline-block;
+    font-size: 0.9rem; /* Tamanho menor da fonte */
+    padding: 0.4rem 0.8rem; /* Menor padding */
+    background-color: #22642C; /* Verde escuro */
+    color: #FFF9E8; /* Amarelo claro */
+    text-align: center;
+    border: none;
+    border-radius: 15px; /* Arredondamento dos cantos */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+.earth-link:hover {
+    background-color: #004db3; /* Tom mais escuro no hover */
+    transform: scale(1.05); /* Leve zoom no hover */
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #011644; /* Cor verde */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 9999; /* Garante que o botão fique acima de outros elementos */
+}
+
+.back-to-top:hover {
+    background-color: #719efd; /* Cor verde mais escura */
+    z-index: 10000; /* Garante que o botão fique ainda mais destacado quando estiver sendo hoverizado */
+}
+
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #022675;
+    color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: block; /* Garante que o rodapé ocupe toda a largura */
+    width: 100%; /* Faz o rodapé ocupar 100% da largura */
+    position: relative; /* Garante que o rodapé seja posicionado de forma correta */
+    bottom: 0; /* Alinha o rodapé no fundo da página */
+}
+
+/* Estilos do conteúdo do rodapé */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens no rodapé */
+    margin-bottom: 10px;
+}
+
+/* Estilos da logo */
+.footer-logo {
+    height: 40px; /* Altura da logo */
+    width: auto;
+    margin-right: 10px; /* Espaço entre a logo e o texto */
+}
+
+/* Estilos do texto */
+.footer-text {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-text strong {
+    color: #FFD700; /* Destaca a palavra "BraSil" com uma cor dourada */
+}

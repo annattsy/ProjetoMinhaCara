@@ -1,0 +1,219 @@
+/* Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFF9E8; /* Amarelo claro */
+    color: #2D7F36; /* Verde escuro */
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right,#113f75, #009639, #FDD835); /* Verde e Amarelo vibrante */
+    padding: 1rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: -1.6rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* Introdução */
+.intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFF9E8;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #2D7F36;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #6A9C5B;
+    margin-top: 1rem;
+}
+
+/* Cards de Navegação */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFEB3B;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: #2D7F36;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #0f3404;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card .btn {
+    display: inline-block;
+    background-color: #FFEB3B;
+    color: #2D7F36;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: color 0.3s;
+}
+
+.card .btn:hover {
+    color: #134b94; /* Cor do texto muda para branco no hover */
+    transform: scale(1.05); /* Leve zoom no hover */
+}
+
+/* Seção de Polaroids */
+.polaroids {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #FFF9E8;
+    margin-top: -2rem;
+}
+
+.polaroids h2 {
+    font-size: 2rem;
+    color: #2D7F36;
+    margin-bottom: 2rem;
+}
+
+.polaroid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 2rem; /* Espaçamento entre as imagens */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px; /* Limita a largura total */
+}
+
+.polaroid {
+    background: #022675;
+    border: 10px #022675;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.polaroid p {
+    font-size: 1rem;
+    color: #c5d8ff;
+    margin-top: 0.5rem;
+}
+
+
+/* Rodapé */
+footer .about {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFF9E8;
+    margin-top: 3rem;
+}
+
+footer .about-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2D7F36;
+    margin-bottom: 1rem;
+    margin-top: -6.5rem;
+}
+
+footer .about-text {
+    font-size: 1.2rem;
+    color: #6A9C5B;
+    line-height: 1.6;
+}
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #022675;
+    color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: block; 
+    width: 100%;
+    position: relative;
+    bottom: 0; 
+}
+
+/* Estilos do conteúdo do rodapé */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens no rodapé */
+    margin-bottom: 10px;
+}
+
+/* Estilos da logo */
+.footer-logo {
+    height: 40px; /* Altura da logo */
+    width: auto;
+    margin-right: 10px; /* Espaço entre a logo e o texto */
+}
+
+/* Estilos do texto */
+.footer-text {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-text strong {
+    color: #FFD700; /* Destaca a palavra "BraSil" com uma cor dourada */
+}
